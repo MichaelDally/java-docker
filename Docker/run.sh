@@ -5,10 +5,9 @@ echo ${ROOT_PATH}
 echo "run.sh env" ${ENVIRONMEMNT}
 
 # Docker command to run test
-#docker run --dns=172.16.140.100 --interactive --volume=${ROOT_PATH}/:/code --rm=true distro.skybet.net/oxiregression/soapui /code/Docker/test.sh
-docker run --dns=172.16.140.100 --interactive --volume=${ROOT_PATH}/:/code --rm=true distro.skybet.net/oxiregression/soapui:0.1 /code/Docker/test.sh ${ENVIRONMENT}
-#docker run --dns=172.16.140.100 --interactive --tty --volume=${ROOT_PATH}/:/code --rm=true distro.skybet.net/oxiregression/soapui bash
+docker run --dns=172.16.140.100 --interactive --volume=${ROOT_PATH}/:/code --rm=true docker.repo.name/image/name:versionNumber /code/Docker/test.sh ${ENVIRONMENT}
+
 
 
 #Load container for manual intervention
-#docker run --dns=172.16.140.100 -i  -t -v ${ROOT_PATH}/:/code --rm=true oxiregression/soapui /bin/bash
+#docker run --dns=172.16.140.100 --interactive --volume=${ROOT_PATH}/:/code --rm=true docker.repo.name/image/name:versionNumbe /bin/bash
