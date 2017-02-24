@@ -5,7 +5,7 @@ echo ${ROOT_PATH}
 echo "run.sh env" ${ENVIRONMEMNT}
 
 # Docker command to run test
-docker run --dns=172.16.140.100 --interactive --volume=${ROOT_PATH}/:/code --rm=true docker.repo.name/image/name:versionNumber /code/Docker/test.sh ${ENVIRONMENT}
+docker run --dns=#### --interactive --volume=${ROOT_PATH}/:/code --rm=true docker.repo.name/image/name:versionNumber /code/Docker/test.sh ${ENVIRONMENT}
 
 
 
