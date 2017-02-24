@@ -10,4 +10,4 @@ docker run --dns=#### --interactive --volume=${ROOT_PATH}/:/code --rm=true docke
 
 
 #Load container for manual intervention
-#docker run --dns=172.16.140.100 --interactive --volume=${ROOT_PATH}/:/code --rm=true docker.repo.name/image/name:versionNumbe /bin/bash
+#docker run --dns=#### --interactive --volume=${ROOT_PATH}/:/code --rm=true docker.repo.name/image/name:versionNumbe /bin/bash
